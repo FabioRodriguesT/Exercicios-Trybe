@@ -55,3 +55,4 @@ git merge nova-branch
 
 # 10- Como você já criou a pasta e “mergeou” as alterações, vamos avançar e criar novas branches. Faça os exercícios a seguir.
 
+link da parte 2: https://github.com/FabioRodriguesT/trybe-exercicios/blob/main/01-fundamentos/01-section-unix-shell-git/02-day-git/parte-2-exercicios.sh

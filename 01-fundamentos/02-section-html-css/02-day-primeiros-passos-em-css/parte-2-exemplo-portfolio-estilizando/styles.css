@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+#title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 700;
+    font-weight: bold;
+}
+.about_me {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(238,238,228);
+}
+
+strong {
+    color: green;
+}
+
+em {
+    color: blue;
+}
+
+.list_elements {
+    font-size: 30px;
+}
+
+#external_link {
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,22 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol:hover  {
+    background-color: blue;
+    color: white;   
+}
+
+li:active {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.4em;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1, p {
+    text-align: center;
+}

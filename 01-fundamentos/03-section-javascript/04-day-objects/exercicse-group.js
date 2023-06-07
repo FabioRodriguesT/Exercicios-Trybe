@@ -1,3 +1,4 @@
+// Exercicio extra que Enza passou na aula no dia 6 de junho.
 const menu = {
   sandwiches: [
     {
@@ -98,9 +99,9 @@ const allLanches = (data) => {
       listName.push(data[typesDatas[indexDeFora]][indexDeDentro].name);
       listPrice.push(data[typesDatas[indexDeFora]][indexDeDentro].price);
     }
-  } 
+  }
 
-  for (let index = 0; index < listName.length; index += 1) {    
+  for (let index = 0; index < listName.length; index += 1) {
     list.push(`Lanche: ${listName[index]}, preço: ${listPrice[index]}`);
   }
 
@@ -108,15 +109,55 @@ const allLanches = (data) => {
   return word;
 }
 
-console.log (allLanches(menu))
-
 // 2. Crie uma função que ao passar o nome de um lanche, retorna o objeto completo dele.
+const nomeLanche = (data, nome) => {
+  const typesDatas = Object.keys(data);
+
+  for (var indexDeFora = 0; indexDeFora < typesDatas.length; indexDeFora += 1) {
+    for (var indexDeDentro = 0; indexDeDentro < data[typesDatas[indexDeFora]].length; indexDeDentro += 1) {
+      if (data[typesDatas[indexDeFora]][indexDeDentro].name === nome) {
+        return data[typesDatas[indexDeFora]][indexDeDentro];
+      }
+    }
+  }
+}
 
 // 3. Crie uma função que ao passar o valor que eu tenho na carteira, retorna um array com o nome dos lanches que posso comprar. Exemplo de retorno: [ 'Big Mac', 'Duplo Quarterão', 'Big Tasty' ]
 
+const quantoPossoComprar = (data, valorDinheiro) => {
+  const typesDatas = Object.keys(data);
+  let listPossoComprar = [];
+
+  for (var indexDeFora = 0; indexDeFora < typesDatas.length; indexDeFora += 1) {
+    for (var indexDeDentro = 0; indexDeDentro < data[typesDatas[indexDeFora]].length; indexDeDentro += 1) {
+      if (data[typesDatas[indexDeFora]][indexDeDentro].price < valorDinheiro) {
+        listPossoComprar.push(data[typesDatas[indexDeFora]][indexDeDentro].name);
+      }
+    }
+  }
+  return listPossoComprar;
+}
+
 // 4. Crie uma função que ao passar um nome de ingrediente, retorna um array com quais lanches tem aquele ingrediente
 /*
-Exemplo: ao colocar queijo cheddar, retorna:
+Exemplo: ao colocar queijo cheddar, retorna:*/
+
+const thatSnackThatContainstheRightIngredient = (data, ingredients) => {
+  const typesDatas = Object.keys(data);
+  const hasIngredientList = [];
+ 
+  for (var indexDeFora = 0; indexDeFora < typesDatas.length; indexDeFora += 1) {
+    for (var indexDeDentro = 0; indexDeDentro < data[typesDatas[indexDeFora]].length; indexDeDentro += 1) {
+      if (data[typesDatas[indexDeFora]][indexDeDentro]["ingredients"] && data[typesDatas[indexDeFora]][indexDeDentro]["ingredients"].includes(ingredients)) {
+        hasIngredientList.push(data[typesDatas[indexDeFora]][indexDeDentro])        
+      }
+    }
+  }
+
+  return hasIngredientList;
+}
+
+/*
 [
   {
     name: 'Big Mac',

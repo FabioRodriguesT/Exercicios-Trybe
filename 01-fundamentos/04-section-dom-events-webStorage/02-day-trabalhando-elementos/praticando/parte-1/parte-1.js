@@ -5,7 +5,8 @@ const whereAreYou = document.querySelector('#where-are-you');
 // 2. Acesse parent a partir de where-are-you e adicione uma color a ele.
 
 const parent = whereAreYou.parentElement;
-parent.style.backgroundColor = 'rgb(255, 150, 0)';
+parent.style.backgroundColor = 'rgb(255, 150, 80)';
+parent.style.color = "white";
 
 // 3. Acesse o first-child-of-child e adicione um texto a ele. Você se lembra dos vídeos da aula anterior? Eles ensinam como fazer isso.
 

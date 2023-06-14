@@ -26,3 +26,54 @@ Adicione o código a seguir a uma página HTML e adicione uma tag script. Você 
 6. Acesse o texto Attention! a partir de where-are-you.
 7. Acesse o third-child a partir de where-are-you.
 8. Acesse o third-child a partir de parent.
+
+# PARTE II - Criando elementos
+
+🚀 Se liga nesse foguete!
+
+Os exercícios destacados com 🚀 são os fundamentais pra você ir bem no projeto! Todos os exercícios vão contribuir com sua formação, mas fique de olho nesses! 👀
+
+🚀E a prática? Aqui!
+
+```HTML
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+</main>
+```
+
+1. Crie um irmão para elementoOndeVoceEsta.
+2. Crie um filho para elementoOndeVoceEsta.
+3. Crie um filho para primeiroFilhoDoFilho.
+4. A partir desse filho criado, acesse terceiroFilho.
+
+# PARTE III - Removendo Elementos
+
+```HTML
+<main id="father-of-father">
+  <section id="parent">
+    <section id="first-child">
+      <h2>Primeiro Filho</h2>
+    </section>
+    <section id="where-are-you">
+      <h2>Elemento que você deve remover</h2>
+    </section>
+    <section id="third-child">
+      <h2>Terceiro Filho</h2>
+    </section>
+    <section id="quartoEUltimoFilho">
+      <h2>Quarto Filho</h2>
+    </section>      
+  </section>
+</main>
+```
+
+1. Remova a tag h2, filha do elemento where-are-you.

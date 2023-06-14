@@ -73,9 +73,15 @@ titleElement.className = 'title';
 
 // 11. Adicione a classe description nas 3 tags h3 criadas;
 
-firstSubtitleElement.className = 'description';
-secondSubtitleElement.className = 'description';
-thirdSubtitleElement.className = 'description';
+const listOfH3 = document.querySelectorAll('h3');
+
+for (let index = 0; index < listOfH3.length; index += 1) {
+  listOfH3[index].className = 'description';  
+}
+
+//firstSubtitleElement.className = 'description';
+//secondSubtitleElement.className = 'description';
+//thirdSubtitleElement.className = 'description';
 
 // 12. Remova a section criada no passo 5 (aquela que possui a classe left-content) por meio da função .removeChild();
 

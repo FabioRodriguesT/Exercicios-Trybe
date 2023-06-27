@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#container {
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
+}
+
+#header {
+  background: #ccc;
+  padding: 20px;
+}
+
+#header h1 {
+  margin: 0;
+}
+
+#navigation {
+  width: 100%;
+  background: #333;
+}
+
+#navigation ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul li {
+  list-style-type: none;
+  display: flex;
+}
+
+#navigation li a {
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+}
+
+#navigation li a:hover {
+  background: #383;
+}
+
+#content-container {
+  width: 100%;
+  background: #FFF;
+  display: flex;
+}
+
+#content {
+  width: 60%;
+  padding: 20px 0;
+  margin: 0 0 0 4%;
+}
+
+#content h2 {
+  margin: 0;
+}
+
+#aside {
+  width: 33%;
+  padding: 20px 0;
+  margin: 0 3% 0 0;
+}
+
+#aside h3 {
+  margin: 5px;
+}
+
+#footer {
+  background: #ccc;
+  text-align: right;
+  padding: 20px;
+  height: 1%;
+}
+
+/* Crie uma versão de layout para impressão */
+
+@media screen and (max-width: 768px) {
+  /* Os elementos id header, navigation e footer devem desaparecer. */
+  #header, #footer {
+    display: none;
+  }
+  /* O elemento id='aside' deve ser mostrado abaixo do conteúdo principal. */
+  #content-container {
+    flex-direction: column;    
+  }
+  #content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;  
+    align-items: center;
+  }
+
+  #content > img {
+    width: 70%;
+  } 
+
+  #aside {   
+    width: 90%;   
+    padding: 20px;
+    padding-top: 0px;
+  }
+
+}
+/* 3. Crie uma versão de layout para telas pequenas */
+@media screen and (max-width: 640px) {
+  /* O elemento id='aside' deve desaparecer. */
+  #aside {
+    display: none;
+  }
+
+  #header {
+    display: block;
+  }
+
+  /* O elemento id header deve ser fixo, de forma que fique aparecendo sempre no topo da tela, mesmo após a pessoa usuária rolar a página. */
+  #navigation {
+    position: fixed;
+    top: 0;
+  }
+  /* Os itens dentro do elemento navigation devem aparecer cada um em sua própria linha. */
+
+  #navigation > ul{
+    display: flex;
+    flex-direction: column;
+  } 
+}
+
+
+

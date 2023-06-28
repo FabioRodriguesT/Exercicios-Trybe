@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* 1. Crie um layout para telas pequenas; 600px a 768px*/
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    background-color: bisque;
+  }
+  .bi-list {
+    font-size: 50px;
+  }
+  /* .fa-1x {
+    font-size: 1.5rem;
+  }
+  .navbar-toggler.toggler-example {
+    cursor: pointer;
+  }
+  .dark-blue-text {
+    color: #0A38F5;
+  }
+  .dark-pink-text {
+    color: #AC003A;
+  }
+  .dark-amber-text {
+    color: #ff6f00;
+  }
+  .dark-teal-text {
+    color: #004d40;
+  } */
+}
+
+/* 2. Crie um layout para telas médias; 768px a 992px*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+ 
+}
+
+/* 3. Crie um layout para telas grandes. 992 a 1200*/
+@media screen and (min-width: 992px) {
+  body {
+    background-color: yellow;
+  }
+}

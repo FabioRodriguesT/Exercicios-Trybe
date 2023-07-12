@@ -1,14 +1,3 @@
-# PARTE I - Array.reduce
-
-1. Para fixar ainda mais o conceito de reduce, faça uma função que some todos os números pares do array numbers. Tente criar duas funções, uma usando reduce e filter, e outra apenas usando reduce.
-
-```js
-const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
-```
-
-2. Crie uma função usando dados de estudantes, para mostrar na tela um relatório que diz em qual matéria a pessoa foi melhor. Você usará tanto o map quanto o reduce dentro dele!
-
-```js
 const estudantes = [
   {
     nome: 'Jorge',
@@ -83,17 +72,5 @@ const estudantes = [
     ],
   },
 ];
-```
 
-Resultado esperado:
-
-```js
-[
-  { name: 'Jorge', materia: 'Português' },
-  { name: 'Mario', materia: 'Biologia' },
-  { name: 'Jorge', materia: 'Português' },
-  { name: 'Maria', materia: 'Química' },
-  { name: 'Natalia', materia: 'Português' },
-  { name: 'Wilson', materia: 'Português' },
-]
-```
+module.exports = estudantes;

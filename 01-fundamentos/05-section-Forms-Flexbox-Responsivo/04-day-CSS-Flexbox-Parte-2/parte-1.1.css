@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+}
+
+.header-container {
+  background-color: #5C687C;
+  display: flex;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  /* Adicione uma propriedade flex-basis aos containers no logotipo com o tamanho de 268px; */
+  flex-basis: 268px;
+  /* Adicione uma propriedade Flexbox que modifica a ordem em que o logo e os itens do menu aparecem na tela. */
+  order: 0;
+  ;
+}
+
+.menu-container {
+  display: flex;
+  /* Adicione uma propriedade flex-basis aos containers no container do menu com o tamanho de 500px.; */
+  flex-basis: 500px;
+  order: 1;
+  /* Adicione uma propriedade Flexbox que faça o container do menu crescer, quando houver espaço disponível. */
+  flex-grow: 1;
+  /* Utilize a propriedade align-self no elemento correto para que o header da página tenha o seguinte comportamento: */
+  align-self: center
+}
+
+.menu-container ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu-container li {
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  list-style: none;
+  margin-right: 10px;
+}

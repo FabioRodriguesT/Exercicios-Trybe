@@ -2,7 +2,7 @@ const books = [
   {
     id: 1,
     name: 'As Crônicas de Gelo e Fogo',
-    genre: 'Fantasia',
+    genre: 'Fantasia2',
     author: {
       name: 'George R. R. Martin',
       birthYear: 1948,
